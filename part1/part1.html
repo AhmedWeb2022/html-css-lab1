@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./part1.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="v-container">
+      <video src="./vedio/Peach_Boy_Riverside_9__360.mp4" id="vedio"></video>
+    </div>
+    <div id="controls">
+      <button id="play" class="btn">Play</button>
+      <button id="stop" class="btn">Stop</button>
+      <button id="to-begin" class="btn">&lt;&lt;</button>
+      <button id="backward" class="btn">&lt;</button>
+      <button id="forward" class="btn">&gt;</button>
+      <button id="to-end" class="btn">&gt;&gt;</button>
+      <input type="range" id="range" min="0" max="100" value="0" step="1" />
+      <button id="mute" class="btn">Mute</button>
+      <input type="range" id="volume-range" min="0" max="100" value="100" step="1" />
+      <input type="range" id="speed-range" min="0" max="16" value="1" step=".1" />
+      <span id="current-time">--</span> / <span id="full-time">--</span>
+    </div>
+    <script src="./part1.js"></script>
+  </body>
+</html>
